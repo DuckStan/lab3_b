@@ -458,7 +458,7 @@ namespace lab3 {
 	}
 	Hex Hex::subtract(Hex b) const {
 		Hex c;
-		b.hex[0] = '-';
+		if (b.hex[0] == '-') b.hex[0] = '+'; else b.hex[0] = '-';;
 		b.set_forms();
 		try {
 			c = this->add(b);
