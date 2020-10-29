@@ -19,7 +19,7 @@ namespace lab3 {
 		//constructors
 		Hex();
 		Hex(char *hex_value);
-		Hex(long long int hex_value);
+		Hex(int hex_value);
 		//setters
 		Hex& input(std::istream&);
 		friend std::istream&  operator >>(std::istream& s, Hex& st);
@@ -52,7 +52,7 @@ namespace lab3 {
 	char int_to_hex(int value);
 	int hex_to_int(char value);
 	int hex_to_binary(char hex_value);
-	char int_to_hex(int value);
+	char binary_to_hex(int binary_value);
 }
 
 #endif
